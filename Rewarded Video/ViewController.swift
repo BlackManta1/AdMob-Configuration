@@ -12,8 +12,6 @@ import GoogleMobileAds
 
 class ViewController: UIViewController, GADRewardBasedVideoAdDelegate, GADBannerViewDelegate, GADInterstitialDelegate {
     
-    //var appId = "ca-app-pub-1999516252122480~4114640415"
-    
     @IBOutlet weak var bannerView: GADBannerView!
     
     var interstitial: GADInterstitial!
@@ -22,8 +20,9 @@ class ViewController: UIViewController, GADRewardBasedVideoAdDelegate, GADBanner
         
         super.viewDidLoad()
         
+        
         // Do any additional setup after loading the view.
-        // mise en place
+        // process
         GADRewardBasedVideoAd.sharedInstance().load(GADRequest(), withAdUnitID: "ca-app-pub-3940256099942544/1712485313")
         GADRewardBasedVideoAd.sharedInstance().delegate = self
         
@@ -64,14 +63,10 @@ class ViewController: UIViewController, GADRewardBasedVideoAdDelegate, GADBanner
         
     }
     
-    
-    
+    // VIDEO AD
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didRewardUserWith reward: GADAdReward) {
+        // this function allow me to reward the user
         print("Reward received with currency: \(reward.type), amount \(reward.amount).")
-        
-        // les elements qui minterresse sont ici
-        // le reward.type et reward.amount genre, tu gagnes une vie en plus
-        
     }
     
     func rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd:GADRewardBasedVideoAd) {
@@ -102,7 +97,7 @@ class ViewController: UIViewController, GADRewardBasedVideoAdDelegate, GADBanner
         print("Reward based video ad failed to load.")
     }
     
-    // banniere code
+    // BANNER AD
     /// Tells the delegate an ad request loaded an ad.
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
         print("adViewDidReceiveAd")
@@ -136,7 +131,7 @@ class ViewController: UIViewController, GADRewardBasedVideoAdDelegate, GADBanner
         print("adViewWillLeaveApplication")
     }
     
-    // FULL SCREEN AD METHODS
+    // FULL SCREEN AD
     /// Tells the delegate an ad request succeeded.
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
         print("interstitialDidReceiveAd")
