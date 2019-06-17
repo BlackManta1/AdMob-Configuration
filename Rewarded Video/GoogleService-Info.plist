@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>994793282633-de48ivoip4ojnu1bc0lvac814skgkusq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.994793282633-de48ivoip4ojnu1bc0lvac814skgkusq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA3sTj3NxRbRz4HMRajE0NWdkakTlsrKqc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>994793282633</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.djalo.Rewarded-Video</string>
+	<key>PROJECT_ID</key>
+	<string>rewarded-video-7ee00</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rewarded-video-7ee00.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:994793282633:ios:a8be3fd2def9946f</string>
+	<key>DATABASE_URL</key>
+	<string>https://rewarded-video-7ee00.firebaseio.com</string>
+</dict>
+</plist>
